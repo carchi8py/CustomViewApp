@@ -45,13 +45,23 @@ class CustomView: UIView {
     override func drawRect(rect: CGRect) {
         // Drawing code
         
-        var context = UIGraphicsGetCurrentContext()
+        let context = UIGraphicsGetCurrentContext()
         var retangle = bounds
+        var lineWidth: CGFloat = 10
+        let inset: CGFloat = lineWidth * 2
         
-        CGContextSetLineWidth(context, 4.0)
-        UIColor.whiteColor().set()
-        
-        UIRectFrame(retangle)
+        //give us a range of 1 through 10
+        for i in 1...10 {
+            retangle = CGRectInset(retangle, inset, inset)
+            CGContextSetLineWidth(context, lineWidth)
+            
+            retangle.origin.x += 5
+            retangle.origin.y += 5
+            lineWidth--
+            UIColor.whiteColor().set()
+            
+            UIRectFrame(retangle)
+        }
     }
 
 }
