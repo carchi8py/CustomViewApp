@@ -10,15 +10,17 @@ import UIKit
 
 class CustomView: UIView {
     
+    //Get called when we make a call in viewController
     override init(frame: CGRect) {
-        
+        print("init.frame")
         super.init(frame: frame)
         
         setup()
     }
     
+    //Get called when we change the default class to CustomView in the story map
     required init?(coder aDecoder: NSCoder) {
-
+        print("init.coder")
         super.init(coder: aDecoder)
         
         setup()
@@ -26,6 +28,16 @@ class CustomView: UIView {
     
     func setup() {
         backgroundColor = UIColor.blueColor()
+    }
+    
+    //This will get called after init and move to Window
+    override func didMoveToSuperview() {
+        print("didMoveToSuperView")
+    }
+    
+    //THis will get called after the init, but before moving to super view
+    override func didMoveToWindow() {
+        print("didMoveTOWindow")
     }
 
     /*
