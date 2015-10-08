@@ -14,6 +14,7 @@
 		27B379381BC61EBE0070DFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B379361BC61EBE0070DFBF /* LaunchScreen.storyboard */; };
 		27B379431BC61EBE0070DFBF /* CustomViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B379421BC61EBE0070DFBF /* CustomViewAppTests.swift */; };
 		27B3794E1BC61EBE0070DFBF /* CustomViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3794D1BC61EBE0070DFBF /* CustomViewAppUITests.swift */; };
+		27B3795C1BC61F410070DFBF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3795B1BC61F410070DFBF /* CustomView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		27B379491BC61EBE0070DFBF /* CustomViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B3794D1BC61EBE0070DFBF /* CustomViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewAppUITests.swift; sourceTree = "<group>"; };
 		27B3794F1BC61EBE0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B3795B1BC61F410070DFBF /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				27B3792D1BC61EBE0070DFBF /* AppDelegate.swift */,
 				27B3792F1BC61EBE0070DFBF /* ViewController.swift */,
+				27B3795B1BC61F410070DFBF /* CustomView.swift */,
 				27B379311BC61EBE0070DFBF /* Main.storyboard */,
 				27B379341BC61EBE0070DFBF /* Assets.xcassets */,
 				27B379361BC61EBE0070DFBF /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B3795C1BC61F410070DFBF /* CustomView.swift in Sources */,
 				27B379301BC61EBE0070DFBF /* ViewController.swift in Sources */,
 				27B3792E1BC61EBE0070DFBF /* AppDelegate.swift in Sources */,
 			);
