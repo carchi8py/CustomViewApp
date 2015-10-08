@@ -40,12 +40,18 @@ class CustomView: UIView {
         print("didMoveTOWindow")
     }
 
-    /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         // Drawing code
+        
+        var context = UIGraphicsGetCurrentContext()
+        var retangle = bounds
+        
+        CGContextSetLineWidth(context, 4.0)
+        UIColor.whiteColor().set()
+        
+        UIRectFrame(retangle)
     }
-    */
 
 }
